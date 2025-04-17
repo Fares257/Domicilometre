@@ -1,0 +1,104 @@
+/* Fond animé et police douce */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease infinite;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation de fond */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Barre de navigation stylée */
+.navbar {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 15px 50px;
+    width: fit-content;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+}
+
+/* Titres centrés */
+h2, h3, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Conteneur du formulaire */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffffcc;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Champs de formulaire stylés */
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+/* Bouton d'ajout stylé */
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5a67d8;
+    transform: scale(1.05);
+}
